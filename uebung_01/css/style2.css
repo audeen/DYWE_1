@@ -1,0 +1,124 @@
+/* Allgemeine Definitionen
+ * ======================================== */
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/merriweather-regular.woff')
+	format('woff');
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/merriweather-bold.woff')
+		format('woff');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/lato-bold.woff')
+		format('woff');
+	font-weight: bold;
+}
+
+html {
+    font:16px/1.6 'Merriweather', helvetica, arial, sans-serif;
+}
+
+body {
+    background-color: #EAEAEA;
+    margin: 0;
+    max-width: 1200px;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+/* Überschriften, Text und Listen
+ * ======================================== */
+
+h1 {
+	font-family: 'Lato';
+	font-size: 2.25rem;
+	line-height: 1.2;
+}
+h2 {
+	font-family: 'Lato';
+	font-size: 1.75rem;
+	line-height: 1.2;
+}
+
+li {
+	margin: 0.5rem 0;
+}
+
+/* Links (mit verschiedenen Zuständen)
+ * ======================================== */
+
+a, a:visited {
+	color: #2BB16B;
+	text-decoration: underline solid #999999;
+	text-decoration-skip: ink;
+}
+
+/* Kopf- und Fußzeile
+ * ======================================== */
+
+ header, footer {
+    background-color: #fff;
+    padding: 2rem;
+	text-align: center;
+}
+.logo {
+    width: 150px;
+    padding-top: 2.5rem;
+    margin: auto;
+}
+nav {
+	margin-top: 0.5rem;
+}
+nav>a {
+	font-size: 1.25rem;
+	margin: 0 1rem;
+}
+
+/* Hauptinhalt: Artikel und Seitenleiste
+ * ======================================== */
+
+content {
+	margin: 0 auto 0 auto;
+	
+}
+
+aside {
+	margin: 1.5rem 2rem;
+	padding: 0 1.5rem;
+	background-color: #fff;	
+}
+
+@media (min-width: 600px){
+    html {
+        font-size:18px;        
+    }
+    .content {
+        display:flex;
+    }
+    .articles {
+        width: 66.6666666%;
+        margin-right: 2rem;
+    }
+    aside {
+		width: 33.3333333%;
+		height: 100%;
+		
+		
+    }
+}
+
+article {
+	padding: 1.5rem;
+	margin-top: 1.5rem;
+	background-color: #fff; 
+}
